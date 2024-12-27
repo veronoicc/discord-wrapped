@@ -4,6 +4,7 @@ import wrap from '../../generator';
 import { renameSync } from 'fs';
 import WebSocket from 'ws';
 import path from 'path';
+import Logger from '../../utils/Logger';
 
 /**
  * GenerateController
@@ -48,6 +49,7 @@ class GenerateController extends Controller {
 				}
 			});
 		} catch (e) {
+			Logger.info(e)
 			console.error(e);
 			try {
 				ws.send(JSON.stringify({ progress: 500, info: 'There went something wrong, are you sure your data package is complete or valid?' }));
