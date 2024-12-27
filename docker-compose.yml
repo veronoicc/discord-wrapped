@@ -3,6 +3,10 @@ services:
   backend:
     build: ./backend
     container_name: discord-wrapped-backend
+    ports:
+      - 3020:3020
   frontend:
     build: ./frontend
     container_name: discord-wrapped-frontend
+    ports:
+      - 5173:5173
