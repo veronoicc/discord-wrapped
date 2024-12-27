@@ -15,7 +15,7 @@ RUN apt-get update \
     && apt-get install -y curl \
     && apt-get -y autoclean
 
-ENV NODE_ENV "production"
+ENV NODE_ENV "development"
 
 RUN apt-get update && apt-get -qqy install \ 
 build-essential python3 python-is-python3 libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev libxi-dev libglu1-mesa-dev libglew-dev ffmpeg
