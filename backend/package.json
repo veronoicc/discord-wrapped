@@ -1,6 +1,6 @@
 {
   "name": "discord-wrapped-backend",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Discord Wrapped backend",
   "main": "src/app.ts",
   "author": "Iliannnn",
