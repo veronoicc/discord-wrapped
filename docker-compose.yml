@@ -6,9 +6,3 @@ services:
   frontend:
     build: ./frontend
     container_name: discord-wrapped-frontend
-
-networks:
-  default:
-    external: true
-    name: proxy
-    
